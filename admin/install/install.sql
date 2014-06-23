@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS `#__cms2cms_options`;
+CREATE TABLE IF NOT EXISTS `#__cms2cms_options` (`id` mediumint(9) NOT NULL AUTO_INCREMENT, `option_name` VARCHAR(64) DEFAULT '' NOT NULL, `option_value` VARCHAR(64) DEFAULT '' NOT NULL, UNIQUE KEY `id` (`id`));

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" >
+	<name>CMS2CMS: Automated WordPress to J! Migration</name>
+	<menu>Wordpress to J 3</menu>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2013-07-02</creationDate>
+	<author>CMS2CMS</author>
+	<authorEmail>contact@cms2cms.com</authorEmail>
+	<authorUrl>http://www.cms2cms.com</authorUrl>
+	<copyright>CMS2CMS Copyright</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.01</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Migrate WordPress to Joomla!</description>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">install/uninstall.sql</file>
+        </sql>
+    </uninstall>
+	
+	<files folder="site">
+		<filename>cms2cmsautomatedwordpresstojmigration.php</filename>
+		<filename>index.html</filename>
+		<filename>cms2cms/bridge.php</filename>
+		<filename>cms2cms/version.txt</filename>
+		<filename>cms2cms/root_level.txt</filename>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>CMS2CMS: WordPress to J</menu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<folder>install</folder>
+			<filename>cms2cmsautomatedwordpresstojmigration.php</filename>
+			<filename>controller.php</filename>
+			<filename>data.php</filename>
+			<filename>index.html</filename>
+			<filename>view.php</filename>
+			<filename>css/cms2cms.css</filename>
+			<filename>js/cms2cms.js</filename>
+			<filename>js/jsonp.js</filename>
+			<filename>img/wpspin_light.gif</filename>
+			<filename>views/index.html</filename>
+			<filename>views/cms/index.html</filename>
+			<filename>views/cms/view.html.php</filename>
+			<filename>views/cms/tmpl/default.php</filename>
+			<filename>views/cms/tmpl/index.html</filename>
+		</files> 
+	</administration>
+</extension>
